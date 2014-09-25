@@ -17,7 +17,7 @@ MAINTAINER Cameron Morris - lcseehelpdesk@mail.wvu.edu
 #deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
 #deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
 #deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
-
+RUN apt-get -y update
 ################ loudsources.list ###############################
 RUN echo deb http://loud.lcsee.wvu.edu/stable/ ltrusty/ | cat >> /etc/apt/sources.list
 RUN echo deb-src http://loud.lcsee.wvu.edu/stable/ ltrusty/ | cat >> /etc/apt/sources.list
