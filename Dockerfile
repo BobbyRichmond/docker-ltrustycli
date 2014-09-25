@@ -37,5 +37,6 @@ RUN gpg -a --export 7EB37391878471DD | sudo apt-key add -
 
 RUN apt-get update 
 RUN apt-get -y upgrade 
+RUN apt-get -y install loud-desktop
 
 ################################################################################################# 
