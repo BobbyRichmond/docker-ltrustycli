@@ -31,10 +31,6 @@ RUN echo deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted 
 RUN echo deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted universe multiverse | cat >> /etc/apt/sources.list
 RUN echo deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse | cat >> /etc/apt/sources.list
 RUN echo deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse | cat >> /etc/apt/sources.list
-RUN echo deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/ | cat >> /etc/apt/sources.list
-RUN echo deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/ | cat >> /etc/apt/sources.list
-RUN echo deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/ | cat >> /etc/apt/sources.list
-RUN echo deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/ | cat > /etc/apt/sources.list
 
 RUN apt-get update 
 RUN apt-get -y upgrade 
