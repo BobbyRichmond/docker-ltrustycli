@@ -32,6 +32,9 @@ RUN echo deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restric
 RUN echo deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse | cat >> /etc/apt/sources.list
 RUN echo deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse | cat >> /etc/apt/sources.list
 
+RUN gpg --keyserver pgpkeys.mit.edu --recv-key 7EB37391878471DD      
+RUN gpg -a --export 7EB37391878471DD | sudo apt-key add -
+
 RUN apt-get update 
 RUN apt-get -y upgrade 
 
