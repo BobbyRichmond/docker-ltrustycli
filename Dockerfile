@@ -1,4 +1,5 @@
-docker run camarox53/docker-ltrustyloud grep -v '^#' /etc/apt/sources.list
+FROM ubuntu:14.04
+MAINTAINER Cameron Morris - lcseehelpdesk@mail.wvu.edu
 ############## Ubuntu 14.04 debs ########################
 #deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
 #deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted
@@ -18,38 +19,40 @@ docker run camarox53/docker-ltrustyloud grep -v '^#' /etc/apt/sources.list
 #deb-src http://archive.ubuntu.com/ubuntu/ trusty-security universe
 
 ################ loud.list ###############################
-
-deb http://loud.lcsee.wvu.edu/stable/ ltrusty/
-deb-src http://loud.lcsee.wvu.edu/stable/ ltrusty/
+RUN \
+cp -t /etc/apt/sources.list deb http://loud.lcsee.wvu.edu/stable/ ltrusty/ && \
+cp -t /etc/apt/sources.list deb-src http://loud.lcsee.wvu.edu/stable/ ltrusty/ && \
 
 # LOUD testing
-deb http://loud.lcsee.wvu.edu/loud/ ltrusty-test/
-deb-src http://loud.lcsee.wvu.edu/loud/ ltrusty-test/
+cp -t /etc/apt/sources.list deb http://loud.lcsee.wvu.edu/loud/ ltrusty-test/ && \
+cp -t /etc/apt/sources.list deb-src http://loud.lcsee.wvu.edu/loud/ ltrusty-test/ && \
 
 ################ LCSEE Ubuntu mirror ######################
 # Ubuntu upstream
-deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty main restricted universe multiverse
-deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty main restricted universe multiverse
+cp -t /etc/apt/sources.list deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty main restricted universe multiverse && \
+cp -t deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty main restricted universe multiverse && \
 
 # Ubuntu security updates
-deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-security main restricted universe multiverse
-deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-security main restricted universe multiverse
+cp -t /etc/apt/sources.list deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-security main restricted universe multiverse && \
+cp -t /etc/apt/sources.list deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-security main restricted universe multiverse && \
 
 # Ubuntu updates
-deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted universe multiverse
-deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted universe multiverse
+cp -t /etc/apt/sources.list deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted universe multiverse && \
+cp -t /etc/apt/sources.list deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-updates main restricted universe multiverse && \
 
 #Ubuntu backports
-deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse
-deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse
+cp -t /etc/apt/sources.list deb http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse & \
+cp -t /etc/apt/sources.list deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restricted universe multiverse && \
 
 ############### ltrusty lmaniac.list ########################
 ## LMANIAC
-deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/
-deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/
+cp -t /etc/apt/sources.list deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/ && \
+cp -t /etc/apt/sources.list deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac/ && \
 
 ## LMANIAC Test
-deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/
-deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/
+cp -t /etc/apt/sources.list deb http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/ && \
+cp -t /etc/apt/sources.list deb-src http://loud.lcsee.wvu.edu/lmaniac/ ltrusty-lmaniac-test/ && \
+apt-get update && \
+apt-get -y upgrade && \
 
 ################################################################################################# 
