@@ -35,6 +35,7 @@ RUN echo deb-src http://mirror.lcsee.wvu.edu/ubuntu/ trusty-backports main restr
 RUN gpg --keyserver pgpkeys.mit.edu --recv-key 7EB37391878471DD      
 RUN gpg -a --export 7EB37391878471DD | sudo apt-key add -
 
+RUN apt-get -y install wget
 # grab loud-apt*.deb
 RUN wget -r -l1 --no-parent -A "loud-apt*.deb"  http://loud.lcsee.wvu.edu/stable/$1
 # install loud-apt*.deb package
