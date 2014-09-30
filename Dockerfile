@@ -44,11 +44,11 @@ RUN gpg -a --export 7EB37391878471DD | sudo apt-key add -
 # install loud-apt*.deb package
 //RUN 'dpkg -i loud.lcsee.wvu.edu/stable/$1/loud-apt*.deb'
 # Grab LOUD package listings 
-//RUN apt-get -y update
+RUN apt-get update
 # Update the system
 //RUN apt-get -y dist-upgrade
 #install loud desktop
-RUN -"apt-get -y install 'loud-desktop'"
+RUN -"apt-get install 'loud-desktop'"
 
 RUN apt-get -y update 
 RUN apt-get -y dist-upgrade 
