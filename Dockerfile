@@ -48,7 +48,7 @@ RUN apt-get update
 # Update the system
 //RUN apt-get -y dist-upgrade
 #install loud desktop
-RUN -"apt-get install 'loud-desktop'"
+RUN "apt-get install 'loud-desktop'"
 
 RUN apt-get -y update 
 RUN apt-get -y dist-upgrade 
