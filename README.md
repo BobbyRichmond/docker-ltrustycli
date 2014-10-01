@@ -8,14 +8,14 @@ This Docker image is from a Ubuntu 14.04 Trusty addition "minimal" install.
 Upon "RUN"'ing this Docker image you will be provided with a barebones Ubuntu 14.04 (minimal) image. 
 
 To get completely set up using this Docker image run the following commands in a Debian based environment:
-$ sudo apt-get install docker.io
-$ sudo docker pull camarox53/docker-ltrustyloud 
-$ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
+* $ sudo apt-get install docker.io
+* $ sudo docker pull camarox53/docker-ltrustyloud 
+* $ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
 
 At this point you have a few options:
 
 If you would like to provision this Install with all of the LOUD packages and software please run the following command:
-$ apt-get -y install loud-desktop 
+* $ apt-get -y install loud-desktop 
 
 If you would just like to install the software for your individual classes, run the following command based upon your class you are in:
 
