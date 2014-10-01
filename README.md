@@ -1,6 +1,3 @@
-LOUD - LCSEE OPTIMISED UBUNTU  DISTRIBUTION
-==================
-
 Ubuntu 14.04 Trusty - Provisioned by Loud 
 --------------------------------------------------
 
