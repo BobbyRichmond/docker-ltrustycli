@@ -1,7 +1,8 @@
-docker-ltrustyloud
+LOUD - LCSEE OPTIMISED UBUNTU  DISTRIBUTION
 ==================
 
 Ubuntu 14.04 Trusty - Provisioned by Loud 
+--------------------------------------------------
 
 This Docker image is from a Ubuntu 14.04 Trusty addition "minimal" install. 
 
