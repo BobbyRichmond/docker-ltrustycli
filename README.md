@@ -67,7 +67,7 @@ If you would just like to install the software for your individual classes, run 
 * $ apt-get install loud-cs493t  
 * $ apt-get install loud-cs510  
 * $ apt-get install loud-cs525  
-* $ apt-get install loud-cs572  
+* $ apt-get install loud-cs572
 
 
 * Note : It will take much longer to install loud-desktop then just installing your classes software
