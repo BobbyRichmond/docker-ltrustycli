@@ -9,15 +9,6 @@ Docker containers are both hardware-agnostic and platform-agnostic. This means t
 
 Docker is an open-source implementation of the deployment engine which powers dotCloud, a popular Platform-as-a-Service. It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases."
 
-Legal 
------------
-
-"Brought to you courtesy of our legal counsel. For more context, please see the Notice document.
-
-Use and transfer of Docker may be subject to certain restrictions by the United States and other governments.
-It is your responsibility to ensure that your use and/or transfer does not violate applicable laws.
-
-For more information, please see http://www.bis.doc.gov"
 
 Getting Started:
 ----------------------
