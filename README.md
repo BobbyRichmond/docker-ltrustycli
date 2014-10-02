@@ -78,11 +78,11 @@ When you are ready to leave your Docker Environment:
 
 Run the following command in the Docker Terminal Window when you are ready to leave your Docker environment and return to the Host machine:
 
-$ exit
+* $ exit
 
 When you would like to return to your Docker Environment - Run the following command:
 
-$ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
+* $ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
 
 
 Licensing:
