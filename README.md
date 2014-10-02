@@ -69,8 +69,7 @@ If you would just like to install the software for your individual classes, run 
 * $ apt-get install loud-cs525  
 * $ apt-get install loud-cs572
 
-
-* Note : It will take much longer to install loud-desktop then just installing your classes software
+Note : It will take much longer to install loud-desktop then just installing your classes software
 
 
 When you are ready to leave your Docker Environment:
