@@ -20,8 +20,8 @@ Upon "RUN"'ing this Docker image you will be provided with a barebones Ubuntu 14
 
 To get completely set up using this Docker image run the following commands in a Debian based environment:
 * $ sudo apt-get install docker.io
-* $ sudo docker pull camarox53/docker-ltrustyloud 
-* $ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
+* $ sudo docker pull camarox53/docker-ltrustycli 
+* $ sudo docker run --net=host -t -i camarox53/docker-ltrustycli bash
 
 Installing Software:
 ---------------------------
@@ -72,7 +72,7 @@ Run the following command in the Docker Terminal Window when you are ready to le
 
 When you would like to return to your Docker Environment - Run the following command:
 
-* $ sudo docker run --net=host -t -i camarox53/docker-ltrustyloud bash
+* $ sudo docker run --net=host -t -i camarox53/docker-ltrustycli bash
 
 
 Licensing:
