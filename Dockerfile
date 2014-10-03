@@ -38,6 +38,7 @@ RUN gpg -a --export 7EB37391878471DD | sudo apt-key add -
 RUN apt-get -y update 
 RUN apt-get -y dist-upgrade 
 
+RUN echo 'DOCKER_OPTS="$DOCKER_OPTS -e lxc"' | sudo tee -a /etc/default/docker > /dev/null
 
 
 ################################################################################################# 
