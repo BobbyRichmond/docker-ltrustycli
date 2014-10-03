@@ -40,5 +40,6 @@ RUN apt-get -y dist-upgrade
 
 RUN echo 'DOCKER_OPTS="$DOCKER_OPTS -e lxc"' | sudo tee -a /etc/default/docker > /dev/null
 
+RUN apt-get update
 
 ################################################################################################# 
