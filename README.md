@@ -86,4 +86,4 @@ Troubleshooting:
 If you have any questions or problems installing this software please contact LCSEE Systems:
 
 Email: lcseehelpdesk@mail.wvu.edu  
-Location: 701 ESB of the Engineering Sciences Building
+Location: 233 AER of the Advanced Engineering Research Building
